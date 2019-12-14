@@ -466,7 +466,7 @@ input.gn-search:focus {
 	text-align: left;
 }
 
-p {
+.text-justify {
 	text-align: justify;
 }
 
