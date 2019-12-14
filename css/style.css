@@ -466,6 +466,10 @@ input.gn-search:focus {
 	text-align: left;
 }
 
+p {
+	text-align: justify;
+}
+
 .intro .slogan {
 	padding:450px 0 60px;
 	text-align: center;
