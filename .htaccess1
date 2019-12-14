@@ -1,0 +1,10 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteEngine on
+
+<VirtualHost *:80>
+  ServerName orderstick.com
+  ServerAlias www.orderstick.com orderstick.in www.orderstick.in
+
+  Redirect "/" "http://www.orderstick.com/orderstick/"
+</VirtualHost>
+

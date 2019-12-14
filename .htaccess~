@@ -1,0 +1,6 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} (orderstick|www.orderstick)\.com
+RewriteRule ^(.*)$ %{HTTP_HOST}/orderstick/ [NC]
+

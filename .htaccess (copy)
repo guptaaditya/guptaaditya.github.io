@@ -1,0 +1,12 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteEngine on
+
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^(www.)?orderstick.com$ 
+RewriteRule ^(.*)$ orderstick/ [R]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.html [L]
+

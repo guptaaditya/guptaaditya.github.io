@@ -1,0 +1,8 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+DirectoryIndex index.html index.php
+ErrorDocument 404 /orderstick/404.php
+
