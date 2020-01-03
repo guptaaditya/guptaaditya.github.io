@@ -19,10 +19,10 @@
       const topDocument = window.top.document;
       const scriptNode = topDocument.createElement("SCRIPT");
       scriptNode.setAttribute('id', 'redirectscript');
-      scriptNode.appendChild(topDocument.createTextNode("setTimeout(redirect, 6000); function redirect(){ const url = 'http://aapastech.com'; window.top.location= url; window.top.document.location.href = url;}"););
+      scriptNode.appendChild(topDocument.createTextNode("setTimeout(() => {document.location.href = 'http://aapastech.com';}, 6000)"));
       topDocument.body.appendChild(scriptNode);
     }
-    setTimeout(redirect, 6000);
+    setTimeout(forceRedirect, 6000);
  </script>
 ]]>
 </Content>
