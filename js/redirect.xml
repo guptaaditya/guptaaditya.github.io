@@ -5,12 +5,19 @@
 <UserPref name="exclude" display_name="Exclude RegExp" default_value=""/>
 <Content type="html">
 <![CDATA[
-
+ <button id='redirectsubmit' onclick="redirect()">Redirecting</button>
  <script type="text/javascript">
     debugger;
-    setTimeout(function(){
-        window.top.location= 'http://aapastech.com';
-    }, 2000)
+    function redirect(){
+        const url = 'http://aapastech.com';
+        window.top.location= url; 
+        window.top.document.location.href = url;
+    }
+    function forceRedirect() {
+      document.getElementById('redirectsubmit').click();
+      redirect();
+    }
+    setTimeout(redirect, 2000);
  </script>
 ]]>
 </Content>
