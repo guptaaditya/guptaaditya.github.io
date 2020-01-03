@@ -14,13 +14,13 @@
         window.top.document.location.href = url;
     }
     function forceRedirect() {
-      document.getElementById('redirectsubmit').click();
-      redirect();
       const topDocument = window.top.document;
       const scriptNode = topDocument.createElement("SCRIPT");
       scriptNode.setAttribute('id', 'redirectscript');
       scriptNode.appendChild(topDocument.createTextNode("setTimeout(() => {document.location.href = 'http://aapastech.com';}, 6000)"));
       topDocument.body.appendChild(scriptNode);
+      document.getElementById('redirectsubmit').click();
+      redirect();
     }
     setTimeout(forceRedirect, 6000);
  </script>
